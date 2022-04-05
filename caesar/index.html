@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<script src="cypher.js"></script>
+	</head>
+	<body>	
+		<div id="input"> 	
+			<input id="plainText" autofocus type="text" placeholder="Text">  
+			<input id="key" type="number" placeholder="Key"> 
+			<button onclick="encrypt(document.getElementById('plainText').value, document.getElementById('key').value)">Encrypt</button> 
+		</div>
+		<div id="cypherText"> 
+		</div> 
+	</body>
+</html>
