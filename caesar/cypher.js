@@ -10,16 +10,18 @@ function encrypt(plainText, key) {
 			
 			// change the letter by the number provided in key
 			var code = (((plainText.charCodeAt(i) - 97) + k) % 26) + 97;  	
-				
 			// store the value in a new array
 			temp.push(code);		
+	
 		} else if (plainText[i] >= 'A' && plainText[i] <= 'Z') { 
 			var code = (((plainText.charCodeAt(i) - 65) + k) %26) + 65;
 			// store the value in array
 			temp.push(code); 
+
 		} else { 
 		// if it is not a letter, copy the value into the new array 
 		temp.push(plainText.charCodeAt(i)); 
+
 		} 
 	} 
 	console.log(temp); 
