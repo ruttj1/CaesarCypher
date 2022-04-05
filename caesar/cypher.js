@@ -1,8 +1,3 @@
-// refresh page funcion
-function refresh() {
-	window.location.reload(); 
-}
-
 // write cypher function
 function encrypt(plainText, key) {
 	var k = key % 26; 
